@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Portfolio
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding>
+
+        
+      <ion-refresher (ionRefresh)="getItems($event)">
+          <ion-refresher-content>
+              
+          </ion-refresher-content>
+        </ion-refresher>
+
+      <div *ngIf="currentItems">
+       <ion-card>
+
+          <ion-card-header>
+              <h1 class="card-title" style="font-size:140%;">Ethereum</h1>
+          </ion-card-header>
+          
+          <ion-card-content>
+              <p class="card-subtitle" style="font-size:110%;">EUR Price: {{currentItems.data[1].quotes.EUR.price | number:'1.2-2' }} €  </p>
+              <p class="card-subtitle" style="font-size:110%;">ETH quantity: {{ETH_quant | number:'1.5-5' }} ETH  </p>
+              <b class="card-subtitle" style="font-size:110%;">Value: {{currentItems.data[1].quotes.EUR.price*ETH_quant | number:'1.3-3' }} €  </b>
+          </ion-card-content>
+
+        </ion-card>
+
+      </div>
+  </ion-content>

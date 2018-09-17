@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >Market Prices</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-refresher (ionRefresh)="getItems($event)">
+        <ion-refresher-content>
+        </ion-refresher-content>
+    </ion-refresher>
+      <div *ngIf="currentItems">
+      <ion-list > 
+        
+          <ion-item *ngFor="let item of currentItems.data">
+
+              
+            <h1 style="font-size:140%;">{{item.name}}</h1>
+            <span style="font-size:110%;">EUR Price: </span>
+            <b style="font-size:110%;">{{item.quotes.EUR.price | number:'1.2-2' }} €  </b>
+            <p style="font-size:110%;">USD Price: {{item.quotes.USD.price | number:'1.2-2' }} $  </p>
+            <p id="24h%" style="font-size:110%;" [ngClass]="{'positive' : item.quotes.EUR.percent_change_24h > 0, 'negative' : item.quotes.EUR.percent_change_24h < 0}">  24h % Change: {{item.quotes.EUR.percent_change_24h}}  % </p>
+            
+                    
+          </ion-item>
+        
+      </ion-list>
+    </div>
+</ion-content>
+

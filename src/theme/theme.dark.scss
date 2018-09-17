@@ -1,0 +1,46 @@
+.dark-theme {
+    ion-content {
+      background-color: rgb(32, 45, 58);
+      color: rgb(226, 225, 225);
+    }
+   
+    .toolbar-title {
+      color: rgb(226, 225, 225);
+    }
+
+    ion-item {
+      background-color:rgb(32, 45, 58);
+    }    
+   
+    .header .toolbar-background {
+      //border-color: #fff;
+      background-color: rgb(16, 17, 24);
+    }
+    .tabs .tabbar {
+      background-color: rgb(16, 17, 24);
+    }
+
+
+    .tabs-ios-tab-icon-color{
+      background:green;
+    }
+
+    
+
+    ion-label{
+      color:rgb(184, 184, 184);
+    }
+    
+    ion-card {
+      background-color:rgb(16, 17, 24);
+    } 
+
+    .card-title {
+      color:rgb(184, 184, 184);
+    }
+
+
+    .card-subtitle {
+      color:rgb(184, 184, 184);
+    }
+  }  
