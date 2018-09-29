@@ -4,21 +4,21 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { StatsPage } from '../pages/stats/stats';
+import { SettingsPage } from '../pages/settings/settings';
 import { HomePage } from '../pages/home/home';
 import { GraphPage } from '../pages/graph/graph';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Items } from '../mocks/providers/items';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SettingsProvider } from '../providers/settings/settings';
+import { SettingsProvider } from '../providers/settingsProvider/settingsProvider';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    StatsPage,
+    SettingsPage,
     HomePage,
     GraphPage,
     TabsPage
@@ -31,8 +31,8 @@ import { SettingsProvider } from '../providers/settings/settings';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    StatsPage,
+    SettingsPage,
     HomePage,
     GraphPage,
     TabsPage

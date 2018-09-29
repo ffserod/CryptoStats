@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { SettingsProvider } from '../../providers/settings/settings';
+import { SettingsProvider } from '../../providers/settingsProvider/settingsProvider';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-settings',
+  templateUrl: 'settings.html'
 })
 
 
-export class ContactPage {
+export class SettingsPage {
 
   selectedTheme: String;
  

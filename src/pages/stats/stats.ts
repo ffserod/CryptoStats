@@ -4,10 +4,10 @@ import { Item } from '../../models/item';
 import { Items } from '../../mocks/providers/items';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-stats',
+  templateUrl: 'stats.html'
 })
-export class AboutPage {
+export class StatsPage {
 
   currentItems: Item[];
   ETH_quant = 0.14534772;

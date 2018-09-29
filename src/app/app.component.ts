@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SettingsProvider } from './../providers/settings/settings';
+import { SettingsProvider } from '../providers/settingsProvider/settingsProvider';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
