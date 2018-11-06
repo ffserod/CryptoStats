@@ -8,16 +8,15 @@ import { Items } from '../../mocks/providers/items';
   templateUrl: 'home.html'
 })
 
+
 export class HomePage {
   currentItems: Item[];
-
   
 constructor(public navCtrl: NavController, public items: Items) {
  }
 
   ionViewDidLoad() {
     this.getItems();
-   
   }
 
   getItems(refresher?) {

@@ -13,6 +13,7 @@ import { Items } from '../mocks/providers/items';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SettingsProvider } from '../providers/settingsProvider/settingsProvider';
+import { WebsocketProvider } from '../providers/websocket/websocket';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SettingsProvider } from '../providers/settingsProvider/settingsProvider
     Items,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SettingsProvider
+    SettingsProvider,
+    WebsocketProvider
   ]
 })
 export class AppModule {}
